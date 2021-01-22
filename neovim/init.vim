@@ -15,3 +15,6 @@ source $HOME/.config/nvim/config/git.vimrc
 call plug#begin('~/.config/nvim/plugged')
 source $HOME/.config/nvim/config/plugins.vimrc
 call plug#end()
+
+" include plugin config
+source $HOME/.config/nvim/config/plugins_config.vimrc
