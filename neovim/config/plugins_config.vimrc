@@ -5,7 +5,7 @@ set background=dark
 
 " fzf mapping to Ctrl-p like
 " Ctrl-p plugin
-noremap <C-p> :Files<CR>
+noremap <C-p> :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>l :BLines<CR>
 nnoremap <leader>g :Rg<CR>
