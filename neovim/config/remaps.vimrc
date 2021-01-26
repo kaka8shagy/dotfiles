@@ -12,3 +12,6 @@ map <Right> :bnext<CR>
 
 " save file on pressing Ctrl-s
 nnoremap <C-s> :update<CR>
+
+" show undotree
+nnoremap <F5> :UndotreeToggle<CR>
