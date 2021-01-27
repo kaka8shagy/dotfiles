@@ -40,4 +40,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 
+" For commenting code
+Plug 'tpope/vim-commentary'
+
 source $HOME/.config/nvim/config/bufonly.vimrc
