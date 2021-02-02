@@ -5,7 +5,7 @@ set background=dark
 
 " fzf mapping to Ctrl-p like
 " Ctrl-p plugin
-noremap <C-p> :GFiles<CR>
+noremap <C-p> :GFiles --cached --others --exclude-standard<CR>
 map <leader>b :Buffers<CR>
 map <leader>l :BLines<CR>
 nnoremap <leader>g :Rg<CR>
@@ -29,6 +29,9 @@ let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " undotree config
 nnoremap <leader>u :UndotreeShow<CR>
+
+" test file
+nnoremap <leader>t :TestFile<CR>
 
 
 " lsp config

@@ -43,4 +43,12 @@ Plug 'tjdevries/lsp_extensions.nvim'
 " For commenting code
 Plug 'tpope/vim-commentary'
 
+
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-speeddating'
+"Plug 'glts/vim-magnum'
+"Plug 'glts/vim-radical'
+"Plug 'tpope/vim-unimpaired'
+
 source $HOME/.config/nvim/config/bufonly.vimrc
