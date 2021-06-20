@@ -51,4 +51,7 @@ Plug 'tpope/vim-surround'
 "Plug 'glts/vim-radical'
 "Plug 'tpope/vim-unimpaired'
 
+" configure prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 source $HOME/.config/nvim/config/bufonly.vimrc

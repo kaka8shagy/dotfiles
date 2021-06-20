@@ -33,6 +33,9 @@ nnoremap <leader>u :UndotreeShow<CR>
 " test file
 nnoremap <leader>t :TestFile<CR>
 
+" run prettier on file
+nnoremap <leader>p :Prettier<CR>
+
 
 " lsp config
 set completeopt=menuone,noinsert,noselect
