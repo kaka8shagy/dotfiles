@@ -15,3 +15,18 @@ nnoremap <C-s> :update<CR>
 
 " show undotree
 nnoremap <F5> :UndotreeToggle<CR>
+
+" Ctrl + <directions> for switching windows
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+
+" remap jj to switch to normal mode
+imap jj <Esc>
+imap jk <Esc>
+imap kj <Esc>
+vmap jj <Esc>
+vmap jk <Esc>
+vmap kj <Esc>
+
