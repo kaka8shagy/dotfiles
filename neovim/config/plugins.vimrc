@@ -54,4 +54,7 @@ Plug 'tpope/vim-surround'
 " configure prettier
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
+" add limelight
+Plug 'junegunn/limelight.vim'
+
 source $HOME/.config/nvim/config/bufonly.vimrc

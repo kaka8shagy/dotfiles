@@ -36,6 +36,14 @@ nnoremap <leader>t :TestFile<CR>
 " run prettier on file
 nnoremap <leader>p :Prettier<CR>
 
+" limelight config
+autocmd VimEnter * Limelight
+" Highlighting priority (default: 10)
+" Set it to -1 not to overrule hlsearch
+let g:limelight_priority = -1
+let g:limelight_default_coefficient = 0.5
+
+
 
 " lsp config
 set completeopt=menuone,noinsert,noselect
