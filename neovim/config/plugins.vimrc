@@ -57,4 +57,23 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " add limelight
 Plug 'junegunn/limelight.vim'
 
+" add treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/playground'
+
+" telescope requirements...
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+
+" Debugger Plugins
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
+
+" code folding plugin
+Plug 'pseewald/vim-anyfold'
+
 source $HOME/.config/nvim/config/bufonly.vimrc

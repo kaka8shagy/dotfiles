@@ -32,3 +32,11 @@ fun! s:MkNonExDir(file, buf)
   endif
 endfun
 
+" run code using leader-r
+" run ruby code only when inside a .rb file
+autocmd BufRead, *.rb nmap <leader>r :!ruby %<cr>
+autocmd BufRead, *.js nmap <leader>n :!node %<cr>
+
+" search for visually selected text using //
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+

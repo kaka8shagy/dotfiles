@@ -59,5 +59,35 @@ nnoremap <leader>vsd :lua vim.lsp.diagnostic.show_line_diagnostics(); vim.lsp.di
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
-lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.pyls.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.pyls.setup{ on_attach=require'completion'.on_attach }
+
+lua << EOF
+local nvim_lsp = require('lspconfig')
+local on_attach = require('completion').on_attach
+local servers = {
+    'tsserver',
+    'bashls',
+    'solargraph',
+    'pyright',
+    'graphql',
+    'cssls',
+    'dockerls',
+    'jsonls',
+    'html',
+    'vuels',
+    'yamlls',
+}
+for _, lsp in ipairs(servers) do
+    nvim_lsp[lsp].setup {
+        on_attach = on_attach,
+        flags = {
+            debounce_text_changes = 150,
+        }
+    }
+end
+EOF
+
+" autofold
+autocmd Filetype * AnyFoldActivate " activate for all filetypes
+set foldlevel=0 " close all folds

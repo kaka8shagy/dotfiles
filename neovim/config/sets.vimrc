@@ -3,8 +3,8 @@ set guicursor=
 set nohlsearch " disable search text highlight after enter
 set hidden " allow switching between buffers without saving
 set noerrorbells " no sounds inside vim
-set tabstop=4 softtabstop=4 " use spaces for tab
-set shiftwidth=4 " shift by 4 spaces for tab
+set tabstop=2 softtabstop=2 " use spaces for tab
+set shiftwidth=2 " shift by 2 spaces for tab
 set expandtab " convert tab to spaces
 set smartindent " indent smartly
 set number " show line numbers
@@ -37,3 +37,5 @@ set colorcolumn=80
 
 set cursorline
 hi CursorLine term=bold cterm=bold
+
+set foldmethod=indent
