@@ -1,7 +1,9 @@
 " greatest remap ever
+xnoremap <leader>p "_dP
 vnoremap <leader>p "_dP
 
 " next greatest remap ever : asbjornHaland
+noremap <leader>y "+y
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
@@ -30,3 +32,27 @@ vmap jj <Esc>
 vmap jk <Esc>
 vmap kj <Esc>
 
+" close current file
+nnoremap <leader>c :bd<CR>
+
+" close all open files
+nnoremap <leader>C :bufdo bd<CR>
+
+" Keep the cursor where it is
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<CR>gv=gv
+
+
+" greatest remap ever
+
+" next greatest remap ever : asbjornHaland
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y gg"+yG
+
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d

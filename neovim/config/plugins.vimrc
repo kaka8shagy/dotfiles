@@ -65,9 +65,9 @@ Plug 'nvim-treesitter/playground'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim'
 
-Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 " Debugger Plugins
 Plug 'puremourning/vimspector'
