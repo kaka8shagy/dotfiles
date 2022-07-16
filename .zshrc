@@ -68,14 +68,30 @@ fi
 alias vim='nvim'
 export editor=nvim
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Add RVM to PATH for scripting.
+# Make sure this is the last PATH variable change.
+if [ -e $HOME/.rvm/bin ]
+then
+  export PATH="$PATH:$HOME/.rvm/bin"
+else
+  echo 'rvm is not installed'
+fi
 
 # rust
-. "$HOME/.cargo/env"
+if [ -e $HOME/.cargo/env ]
+then
+  . "$HOME/.cargo/env"
+else
+  echo 'rust is not installed'
+fi
 
 # code specific to work
-source $HOME/.work.sh
+if [ -e $HOME/.work.sh ]
+then
+  source $HOME/.work.sh
+else
+  echo 'no work.sh found'
+fi
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
