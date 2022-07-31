@@ -65,4 +65,12 @@ nvim_tree.setup {
       },
     },
   },
+  log = {
+    enable = true,
+    truncate = true,
+    types = {
+      git = true,
+      profile = true,
+    },
+  },
 }
