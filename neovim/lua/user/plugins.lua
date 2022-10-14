@@ -92,6 +92,9 @@ return packer.startup(function(use)
   -- limelight
   use("junegunn/limelight.vim")
 
+  -- zen mode for vim
+  use("folke/zen-mode.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
